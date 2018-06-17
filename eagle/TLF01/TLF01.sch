@@ -23257,7 +23257,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="IC1" gate="A" x="236.22" y="149.86" rot="MR180"/>
 <instance part="R13" gate="G$1" x="134.62" y="144.78"/>
 <instance part="R11" gate="G$1" x="124.46" y="121.92" rot="R90"/>
-<instance part="C7" gate="G$1" x="144.78" y="106.68"/>
+<instance part="C7" gate="G$1" x="144.78" y="104.14" rot="R180"/>
 <instance part="JP1" gate="G$1" x="20.32" y="53.34" rot="MR0"/>
 <instance part="R14" gate="1" x="144.78" y="55.88" rot="MR0"/>
 <instance part="R12" gate="G$1" x="124.46" y="40.64"/>
@@ -23479,13 +23479,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <junction x="144.78" y="132.08"/>
-<pinref part="C7" gate="G$1" pin="+"/>
-<wire x1="144.78" y1="109.22" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <wire x1="142.24" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <junction x="160.02" y="132.08"/>
+<pinref part="C7" gate="G$1" pin="-"/>
+<wire x1="144.78" y1="109.22" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -23597,10 +23597,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="C7" gate="G$1" pin="-"/>
-<wire x1="144.78" y1="101.6" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="+"/>
+<wire x1="144.78" y1="101.6" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
