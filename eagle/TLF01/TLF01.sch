@@ -23163,7 +23163,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1" value="330"/>
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="FilterOut"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="Resonance 1k/A POT"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="Resonance"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -23179,13 +23179,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="0.1uF"/>
 <part name="J1" library="toshiba-jfet" deviceset="2SK170" device=""/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1" value="1k"/>
-<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="Ictrl 50k/B POT"/>
+<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="Ictrl"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1" value="1k"/>
 <part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="IctlSelect"/>
 <part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="IctrlExt"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PL+ Red"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PL- Green"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="Red"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="Green"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1" value="1k"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/1" value="1k"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -23222,6 +23222,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="104.14" y="165.1" size="1.778" layer="91">C3～C6はPinSocketで実装</text>
 <wire x1="134.62" y1="165.1" x2="104.14" y2="165.1" width="0.1524" layer="97"/>
 <wire x1="104.14" y1="165.1" x2="96.52" y2="149.86" width="0.1524" layer="97"/>
+<text x="76.2" y="17.78" size="1.778" layer="91">R8はPinSocketで実装</text>
+<wire x1="99.06" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="97"/>
+<wire x1="76.2" y1="17.78" x2="68.58" y2="25.4" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="T1" gate="G$1" x="83.82" y="149.86"/>
@@ -23286,9 +23289,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="JP8" gate="A" x="215.9" y="93.98"/>
 <instance part="JP7" gate="G$1" x="215.9" y="116.84"/>
 <instance part="GND7" gate="1" x="205.74" y="109.22"/>
-<instance part="LED1" gate="G$1" x="218.44" y="43.18"/>
+<instance part="LED1" gate="G$1" x="218.44" y="55.88"/>
 <instance part="LED2" gate="G$1" x="231.14" y="55.88" rot="MR0"/>
-<instance part="R17" gate="G$1" x="218.44" y="53.34" rot="R90"/>
+<instance part="R17" gate="G$1" x="218.44" y="43.18" rot="R90"/>
 <instance part="R18" gate="G$1" x="231.14" y="43.18" rot="R90"/>
 <instance part="GND8" gate="1" x="218.44" y="33.02"/>
 <instance part="P+3" gate="1" x="218.44" y="63.5"/>
@@ -23571,11 +23574,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="218.44" y1="38.1" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="G"/>
 <wire x1="180.34" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="68.58" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
@@ -23586,6 +23584,11 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="190.5" y1="33.02" x2="190.5" y2="35.56" width="0.1524" layer="91"/>
 <junction x="190.5" y="35.56"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="218.44" y1="38.1" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -23741,7 +23744,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="V+"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="218.44" y1="60.96" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -23822,18 +23825,18 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="38.1" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="218.44" y1="48.26" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="50.8" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
