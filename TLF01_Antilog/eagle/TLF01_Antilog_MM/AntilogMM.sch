@@ -24714,6 +24714,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="frame"/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="TP_GND"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="EXTPWR"/>
 </parts>
 <sheets>
 <sheet>
@@ -24721,6 +24722,10 @@ DIN A4, landscape with location and doc. field</description>
 <text x="86.36" y="106.68" size="1.778" layer="91">R4はピンソケットで実装</text>
 <wire x1="86.36" y1="106.68" x2="106.68" y2="106.68" width="0.1524" layer="97"/>
 <wire x1="106.68" y1="106.68" x2="111.76" y2="96.52" width="0.1524" layer="97"/>
+<text x="86.36" y="106.68" size="1.778" layer="91">R4はピンソケットで実装</text>
+<text x="106.68" y="38.1" size="1.778" layer="91">R3はピンソケットで実装</text>
+<wire x1="129.54" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="97"/>
+<wire x1="106.68" y1="38.1" x2="101.6" y2="45.72" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="JP1" gate="G$1" x="78.74" y="96.52" rot="MR0"/>
@@ -24769,6 +24774,7 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="JP5" gate="G$1" x="137.16" y="50.8" rot="MR0"/>
 <instance part="GND11" gate="1" x="144.78" y="43.18"/>
+<instance part="JP6" gate="A" x="63.5" y="134.62" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -24782,6 +24788,9 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="86.36" y1="121.92" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="-9V"/>
 <junction x="86.36" y="121.92"/>
+<pinref part="JP6" gate="A" pin="3"/>
+<wire x1="66.04" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+<junction x="86.36" y="132.08"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
@@ -24809,6 +24818,9 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="93.98" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="+9V"/>
 <junction x="86.36" y="147.32"/>
+<pinref part="JP6" gate="A" pin="1"/>
+<wire x1="66.04" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<junction x="86.36" y="137.16"/>
 </segment>
 <segment>
 <pinref part="R6" gate="1" pin="E"/>
@@ -24840,6 +24852,9 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="93.98" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="134.62" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="A" pin="2"/>
+<wire x1="66.04" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
+<junction x="86.36" y="134.62"/>
 </segment>
 <segment>
 <pinref part="R6" gate="1" pin="A"/>
