@@ -1,0 +1,24 @@
+Circuit: * D:\Users\gizmo\Documents\Develop\TLF01\TLF01_Antilog\spice\TLF01+AntilogMM.asc
+
+Limiting fall time of source v4 to 2.08167e-018
+Limiting fall time of source v1 to 1.95156e-019
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Jul 14 10:56:27 2018
+Total elapsed time: 0.820 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 35729
+traniter = 35701
+tranpoints = 13473
+accept = 9387
+rejected = 4086
+matrix size = 62
+fillins = 96
+solver = Normal
+Matrix Compiler1: 11.46 KB object code size  2.3/1.0/[0.7]
+Matrix Compiler2: 7.48 KB object code size  0.7/0.9/[0.6]
+
+

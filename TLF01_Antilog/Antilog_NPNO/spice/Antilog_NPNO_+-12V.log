@@ -1,0 +1,25 @@
+Circuit: * E:\Users\nerdfloor\Documents\Develop\TLF01\TLF01_Antilog\Antilog_NPNO\spice\Antilog_NPNO_+-12V.asc
+
+Direct Newton iteration for .op point succeeded.
+.step vcutoff=-10
+.step vcutoff=0
+.step vcutoff=7.2
+.step vcutoff=10
+
+Date: Wed Oct 23 10:35:16 2019
+Total elapsed time: 0.264 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2932
+traniter = 2550
+tranpoints = 1266
+accept = 1223
+rejected = 43
+matrix size = 21
+fillins = 6
+solver = Normal
+Matrix Compiler1: 1.31 KB object code size  0.5/0.2/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.6
+
